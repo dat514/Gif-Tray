@@ -1,0 +1,45 @@
+{
+  "name": "tray-animator",
+  "version": "1.0.0",
+  "description": "Customizable animated tray icon tool.",
+  "main": "main.js",
+  "author": "dat514",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.dat514.trayanimation",
+    "productName": "Tray Animator",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": "nsis",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "files": [
+      "**/*",
+      "!*.log",
+      "!node_modules/**/test",
+      "!node_modules/**/tests"
+    ]
+  },
+  "dependencies": {
+    "canvas": "^3.2.0",
+    "gif-encoder-2": "^1.0.1",
+    "gifuct-js": "^2.1.2"
+  },
+  "devDependencies": {
+    "electron": "^28.2.0",
+    "electron-builder": "^24.13.3"
+  }
+}
