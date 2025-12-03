@@ -120,7 +120,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [ ] Multiple tray icon profiles
 - [ ] Custom animation speed control
 - [ ] Drag & drop support
-- [ ] macOS and Linux support
+- [ ] Windows support
 - [ ] Icon library/presets
 
 ## 👤 Author
